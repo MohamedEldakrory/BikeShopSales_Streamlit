@@ -8,7 +8,7 @@ from folium.plugins import MarkerCluster
 from IPython.display import display
 import streamlit as st
 import plotly.express as px
-
+st.set_page_config(page_title="Bike Shop Sales Dashboard", page_icon="🚴‍♂️", layout="wide")
 # Load the data
 store_data = pd.read_csv('sales_data.csv')
 
@@ -25,10 +25,10 @@ store_data['Month'] = pd.Categorical(store_data['Month'], categories=months, ord
 custom_colors = ['#f6546a', '#468499', '#81d8d0', '#dddddd', '#f36d5f', '#40e0d0']
 countries_ordered = ['United States', 'Canada', 'United Kingdom', 'Australia', 'Germany', 'France']
 
-# Set page configuration to wide mode
 st.set_page_config(layout="wide")
 st.sidebar.markdown(
     """
+    **Mohamed Eldakrory**
     [![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-blue?style=flat-square&logo=linkedin&labelColor=0077B5&logoColor=white)](https://www.linkedin.com/in/mohamed-eldakrory89/)
     """
 )
