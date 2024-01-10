@@ -384,7 +384,7 @@ if not filtered_data.empty:
             fig_age_distribution, ax_age_distribution = plt.subplots(figsize=(14, 5))
             customer_age_ax = filtered_data['Age_Group'].value_counts().sort_values(ascending=False).plot(kind='bar', color=custom_colors, ax=ax_age_distribution)
             customer_age_ax.bar_label(customer_age_ax.containers[0], label_type='edge', color='white', fontsize=10, padding=2, fontweight='bold')
-            title_text = f'Customers Distribution by Age ({selected_state})'
+            title_text = 'Customers Distribution by Age'
             customer_age_ax.set_title(title_text, fontsize=15, fontweight='bold', color='white')
             customer_age_ax.tick_params(axis='both', colors='white')  # Set tick color
             plt.xticks(rotation=0, ha='center')
@@ -409,7 +409,7 @@ if not filtered_data.empty:
             ax_density_estimate.axvline(x=median_age_of_customers, color='#f6546a', linestyle='--', label=f'Median: {median_age_of_customers:.1f}')
             ax_density_estimate.axvline(x=average_age_of_customers, color='#468499', linestyle='--', label=f'Mean: {average_age_of_customers:.1f}')
         
-            title_text = f'Density Estimate for Customer Age ({selected_state})'
+            title_text = 'Density Estimate for Customer Age'
             ax_density_estimate.set_title(title_text, fontsize=15, fontweight='bold', color='white')
         
             ax_density_estimate.set_xlabel('Customer Age', fontsize=9, color='white')
