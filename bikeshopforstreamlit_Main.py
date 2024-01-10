@@ -25,7 +25,6 @@ store_data['Month'] = pd.Categorical(store_data['Month'], categories=months, ord
 custom_colors = ['#f6546a', '#468499', '#81d8d0', '#dddddd', '#f36d5f', '#40e0d0']
 countries_ordered = ['United States', 'Canada', 'United Kingdom', 'Australia', 'Germany', 'France']
 
-st.set_page_config(layout="wide")
 st.sidebar.markdown(
     """
     **Mohamed Eldakrory**
