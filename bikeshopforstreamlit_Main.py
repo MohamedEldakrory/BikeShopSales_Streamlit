@@ -8,7 +8,7 @@ from folium.plugins import MarkerCluster
 from IPython.display import display
 import streamlit as st
 import plotly.express as px
-st.set_page_config(page_title="Bike Shop Sales Dashboard", page_icon="🚴‍♂️", layout="wide")
+st.set_page_config(page_title="Bike Shop Sales Dashboard", page_icon="🚵", layout="wide")
 # Load the data
 store_data = pd.read_csv('sales_data.csv')
 
