@@ -1328,9 +1328,12 @@ if not filtered_data.empty:
               )
               
               # Display the chart using Streamlit
-              st.plotly_chart(fig_quantity_profit_correlation, use_container_width=True)else:
+              st.plotly_chart(fig_quantity_profit_correlation, use_container_width=True)
+          else:
               # Display a message if the filtered data is empty
               st.warning("No data available for the selected filters. Please adjust your filter criteria.")
           
           st.markdown("---")
-
+else:
+    # Display a message if the filtered data is empty
+    st.warning("No data available for the selected filters. Please adjust your filter criteria.") 
