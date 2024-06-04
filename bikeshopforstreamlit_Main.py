@@ -1334,6 +1334,4 @@ if not filtered_data.empty:
               st.warning("No data available for the selected filters. Please adjust your filter criteria.")
           
           st.markdown("---")
-else:
-    # Display a message if the filtered data is empty
-    st.warning("No data available for the selected filters. Please adjust your filter criteria.") 
+
