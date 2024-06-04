@@ -103,7 +103,6 @@ st.markdown(
     unsafe_allow_html=True
 )
 if not filtered_data.empty:
-              filtered_data = store_data
           st.header('Bike Store Sales Dashboard')
           ## Business Metrics
           # Update business metrics based on filtered data
